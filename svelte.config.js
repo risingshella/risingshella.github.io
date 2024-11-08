@@ -5,7 +5,7 @@ export default {
     adapter: adapter({
       pages: "build",
       assets: "build",
-      fallback: "/src/404.html",
+      fallback: "404.html",
       precompress: false,
       strict: true
     })
