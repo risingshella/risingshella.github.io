@@ -1,8 +1,10 @@
 <script>
-  let data = $props();
-  console.log(data);
+  let { data } = $props()
+  console.log(data)
 </script>
 
 <div>
-  {data.data.data}
+  {#each data.blogs_map as { id, title }}
+    <div><a href="/blogs/{id}">{title}</a></div>
+  {/each}
 </div>

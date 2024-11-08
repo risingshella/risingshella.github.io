@@ -1,18 +1,13 @@
-import adapter from "@sveltejs/adapter-cloudflare";
+import adapter from "@sveltejs/adapter-static"
 
 export default {
   kit: {
     adapter: adapter({
-      routes: {
-        include: ["/*"],
-        exclude: ["<all>"]
-      },
-      platformProxy: {
-        // configPath: "wrangler.toml",
-        environment: undefined,
-        experimentalJsonConfig: false,
-        persist: false
-      }
+      pages: "build",
+      assets: "build",
+      fallback: "/src/404.html",
+      precompress: false,
+      strict: true
     })
   }
-};
+}
