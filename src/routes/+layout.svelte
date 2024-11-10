@@ -1,12 +1,9 @@
 <script>
   import "../app.css"
+  import Navigator from "$lib/components/Navigator.svelte"
   let { children } = $props()
 </script>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blogs">Sample Blog</a>
-</nav>
+<Navigator />
 
 {@render children()}
