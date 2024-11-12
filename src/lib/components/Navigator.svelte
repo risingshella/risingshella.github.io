@@ -14,29 +14,27 @@
     "/blogs": "blogs",
     "/novels": "novels"
   }
-
   let pageSubtitle = $derived(typeOfCorner[$page.url.pathname])
 </script>
 
 <header class="border-b border-slate-300/10">
-  <div class="font-san container flex items-center justify-between px-8 py-4">
-    <a class="group text-lg font-bold text-slate-50" href="/"
-      >shellawa
-      <span class="text-slate-400 transition-colors group-hover:text-slate-200">'s {pageSubtitle} corner</span>
-    </a>
-
+  <div class="font-san container flex items-center py-4 pl-4 sm:justify-between sm:pl-8">
     <div class="flex items-center sm:hidden">
       <DropdownMenu.Root>
         <DropdownMenu.Trigger class="text-slate-200"><Menu /></DropdownMenu.Trigger>
-        <DropdownMenu.Content class="border-slate-900 bg-slate-900 font-bold text-slate-200">
+        <DropdownMenu.Content class="border-slate-300/10 bg-slate-950 font-bold text-slate-200">
           <DropdownMenu.Group>
             {#each routes as { href, label }}
-              <DropdownMenu.Item><a {href}>{label}</a></DropdownMenu.Item>
+              <a {href}><DropdownMenu.Item>{label}</DropdownMenu.Item></a>
             {/each}
           </DropdownMenu.Group>
         </DropdownMenu.Content>
       </DropdownMenu.Root>
     </div>
+
+    <a class="group whitespace-pre pl-4 text-lg font-bold text-slate-50 sm:pl-0" href="/"
+      >shellawa<span class="text-slate-400 transition-colors group-hover:text-slate-200">'s {pageSubtitle} corner</span>
+    </a>
 
     <nav class="hidden items-center gap-8 font-bold text-slate-200 sm:flex">
       {#each routes as { href, label }}
