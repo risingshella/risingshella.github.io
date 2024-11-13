@@ -1,6 +1,27 @@
 [
   {
+    "label": "awasymmetry@gmail.com",
+    "value": "mailto:awasymmetry@gmail.com",
+    "icon": "mail.svg",
+    "copy": true,
+    "open": true
+  },
+  {
+    "label": "Discord",
+    "value": "awasymmetry",
+    "icon": "discord.svg",
+    "copy": true
+  },
+  {
     "label": "Github",
-    "value": "https://github.com/shellawa"
+    "value": "https://github.com/shellawa",
+    "icon": "github.svg",
+    "open": true
+  },
+  {
+    "label": "Facebook",
+    "value": "https://www.facebook.com/shellawawawa/",
+    "icon": "facebook.svg",
+    "open": true
   }
 ]
