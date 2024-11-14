@@ -10,18 +10,42 @@
     "label": "Discord",
     "value": "awasymmetry",
     "icon": "discord.svg",
-    "copy": true
+    "copy": true,
+    "open": false
   },
   {
     "label": "Github",
     "value": "https://github.com/shellawa",
     "icon": "github.svg",
+    "copy": false,
+    "open": true
+  },
+  {
+    "label": "osu!",
+    "value": "https://osu.ppy.sh/u/shellawa/",
+    "icon": "osu.svg",
+    "copy": false,
+    "open": true
+  },
+  {
+    "label": "Reddit",
+    "value": "https://reddit.com/u/allehS/",
+    "icon": "reddit.svg",
+    "copy": false,
     "open": true
   },
   {
     "label": "Facebook",
     "value": "https://www.facebook.com/shellawawawa/",
     "icon": "facebook.svg",
+    "copy": false,
+    "open": true
+  },
+  {
+    "label": "Steam",
+    "value": "https://steamcommunity.com/id/allehS/",
+    "icon": "steam.svg",
+    "copy": false,
     "open": true
   }
 ]
