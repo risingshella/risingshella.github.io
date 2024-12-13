@@ -1,51 +1,39 @@
 [
   {
     "label": "awasymmetry@gmail.com",
-    "value": "mailto:awasymmetry@gmail.com",
-    "icon": "mail.svg",
-    "copy": true,
-    "open": true
+    "href": "mailto:awasymmetry@gmail.com",
+    "copy": "awasymmetry@gmail.com",
+    "icon": "mail.svg"
   },
   {
     "label": "Discord",
-    "value": "awasymmetry",
-    "icon": "discord.svg",
-    "copy": true,
-    "open": false
+    "href": "awasymmetry",
+    "copy": "awasymmetry",
+    "icon": "discord.svg"
   },
   {
     "label": "Github",
-    "value": "https://github.com/shellawa",
-    "icon": "github.svg",
-    "copy": false,
-    "open": true
+    "href": "https://github.com/shellawa",
+    "icon": "github.svg"
   },
   {
     "label": "osu!",
-    "value": "https://osu.ppy.sh/u/shellawa/",
-    "icon": "osu.svg",
-    "copy": false,
-    "open": true
+    "href": "https://osu.ppy.sh/u/shellawa/",
+    "icon": "osu.svg"
   },
   {
     "label": "Reddit",
-    "value": "https://reddit.com/u/allehS/",
-    "icon": "reddit.svg",
-    "copy": false,
-    "open": true
+    "href": "https://reddit.com/u/allehS/",
+    "icon": "reddit.svg"
   },
   {
     "label": "Facebook",
-    "value": "https://facebook.com/shellawawawa/",
-    "icon": "facebook.svg",
-    "copy": false,
-    "open": true
+    "href": "https://facebook.com/shellawawawa/",
+    "icon": "facebook.svg"
   },
   {
     "label": "Steam",
-    "value": "https://steamcommunity.com/id/allehS/",
-    "icon": "steam.svg",
-    "copy": false,
-    "open": true
+    "href": "https://steamcommunity.com/id/allehS/",
+    "icon": "steam.svg"
   }
 ]
