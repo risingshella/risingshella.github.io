@@ -1,5 +1,6 @@
 {
 	"name": "shellawa.github.io",
+	"private": true,
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
@@ -12,21 +13,18 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-static": "^3.0.6",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@sveltejs/kit": "^2.9.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"autoprefixer": "^10.4.20",
-		"bits-ui": "1.0.0-next.49",
-		"clsx": "^2.1.1",
-		"lucide-svelte": "^0.456.0",
-		"prettier": "^3.3.2",
+		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.2.6",
-		"prettier-plugin-tailwindcss": "^0.6.5",
+		"prettier-plugin-tailwindcss": "^0.6.9",
 		"svelte": "^5.0.0",
 		"svelte-copy": "^2.0.0",
-		"tailwind-merge": "^2.5.4",
-		"tailwind-variants": "^0.2.1",
 		"tailwindcss": "^3.4.9",
-		"tailwindcss-animate": "^1.0.7",
-		"vite": "^5.0.3"
+		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"lucide-svelte": "^0.468.0"
 	}
 }

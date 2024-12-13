@@ -3,7 +3,7 @@
   let { data } = $props()
 </script>
 
-<div class="mx-4">
+<div class="mx-4 mb-8">
   <div class="my-4 text-center text-slate-200 md:my-10">
     <h1 class="text-2xl font-bold">Hi there, I'm shellawa</h1>
     <p class="mx-auto mt-2 max-w-3xl md:mt-4 md:text-lg">

@@ -8,16 +8,18 @@
   $effect(() => {
     if (is_copied) setTimeout(() => (is_copied = false), 2000)
   })
+
+  console.log(link)
 </script>
 
 <svelte:head>
   <title>About - shellawa</title>
-  <meta name="description" content="shellawa's about page">
+  <meta name="description" content="shellawa's about page" />
 </svelte:head>
 
 <div class="relative flex items-center rounded-lg border border-slate-600 p-4 transition-colors hover:bg-slate-800">
-  {#if link.open}
-    <a class="absolute left-0 h-full w-full" aria-label="open" href={link.value} target="_blank"></a>
+  {#if link.href}
+    <a class="absolute left-0 h-full w-full" aria-label="open" href={link.href} target="_blank"></a>
   {/if}
   <img
     class="absolute w-6 invert"
@@ -27,7 +29,7 @@
   <div class="mx-auto">{link.label}</div>
   {#if link.copy}
     <button
-      use:copy={link.value.split(":").pop()}
+      use:copy={link.copy}
       onclick={() => (is_copied = true)}
       class="absolute right-0 z-50 mr-4 w-6"
       aria-label="copy"

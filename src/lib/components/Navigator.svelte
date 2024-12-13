@@ -1,6 +1,5 @@
 <script>
-  import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js"
-  import { Menu } from "lucide-svelte"
+  import { Menu, X } from "lucide-svelte"
   import { page } from "$app/stores"
 
   const routes = [
@@ -14,32 +13,52 @@
     "/blogs": "blogs ",
     "/novels": "novels "
   }
+
   let pageSubtitle = $derived(typeOfCorner[$page.url.pathname])
+  let isMenuOpened = $state(false)
+
+  $effect(() => {
+    if (isMenuOpened) document.getElementById("menu").focus()
+  })
 </script>
 
-<header class="border-b border-slate-300/10">
-  <div class="font-san container flex items-center py-4 pl-4 sm:justify-between sm:pl-8">
-    <div class="flex items-center sm:hidden">
-      <DropdownMenu.Root>
-        <DropdownMenu.Trigger class="text-slate-200"><Menu /></DropdownMenu.Trigger>
-        <DropdownMenu.Content class="border-slate-300/10 bg-slate-950 font-bold text-slate-200">
-          <DropdownMenu.Group>
-            {#each routes as { href, label }}
-              <a {href}><DropdownMenu.Item>{label}</DropdownMenu.Item></a>
-            {/each}
-          </DropdownMenu.Group>
-        </DropdownMenu.Content>
-      </DropdownMenu.Root>
+<div class="sticky top-0 z-50">
+  <header class="w-full border-b border-slate-300/10 bg-slate-900/65 backdrop-blur-md sm:bg-transparent">
+    <div class="flex items-center py-4 font-sans sm:justify-around">
+      <div class="flex items-center px-4 text-slate-100 sm:hidden">
+        <button onclick={() => (isMenuOpened = !isMenuOpened)}>
+          {#if !isMenuOpened}
+            <Menu />
+          {:else}
+            <X />
+          {/if}
+        </button>
+      </div>
+
+      <a class="group whitespace-pre text-lg font-bold text-slate-50 sm:pl-0" href="/">
+        shellawa
+        <span class="text-slate-400 transition-colors group-hover:text-slate-200">'s {pageSubtitle}corner </span>
+      </a>
+
+      <nav class="hidden items-center gap-8 font-bold text-slate-200 sm:flex">
+        {#each routes as { href, label }}
+          <a {href}>{label}</a>
+        {/each}
+      </nav>
     </div>
+  </header>
 
-    <a class="group whitespace-pre pl-4 text-lg font-bold text-slate-50 sm:pl-0" href="/"
-      >shellawa<span class="text-slate-400 transition-colors group-hover:text-slate-200">'s {pageSubtitle}corner</span>
-    </a>
-
-    <nav class="hidden items-center gap-8 font-bold text-slate-200 sm:flex">
+  <!-- dropdown -->
+  {#if isMenuOpened}
+    <div
+      id="menu"
+      tabindex="-1"
+      class="absolute max-h-fit w-28 rounded-b-md border-x border-slate-300/10 bg-slate-900/65 font-semibold text-slate-100 outline-none backdrop-blur-md"
+      onfocusout={() => (isMenuOpened = false)}
+    >
       {#each routes as { href, label }}
-        <a {href}>{label}</a>
+        <a class="block h-full w-full border-b border-b-slate-500/5 p-3" {href}>{label}</a>
       {/each}
-    </nav>
-  </div>
-</header>
+    </div>
+  {/if}
+</div>
