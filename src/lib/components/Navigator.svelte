@@ -36,8 +36,9 @@
       </div>
 
       <a class="group whitespace-pre text-lg font-bold text-slate-50 sm:pl-0" href="/">
-        shellawa
-        <span class="text-slate-400 transition-colors group-hover:text-slate-200">'s {pageSubtitle}corner </span>
+        shellawa<span class="text-slate-400 transition-colors group-hover:text-slate-200"
+          >'s {pageSubtitle}corner
+        </span>
       </a>
 
       <nav class="hidden items-center gap-8 font-bold text-slate-200 sm:flex">
