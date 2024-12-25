@@ -6,7 +6,8 @@
 
   const carta = new Carta({
     extensions: [code()],
-    sanitizer: DOMPurify.sanitize
+    sanitizer: DOMPurify.sanitize,
+    theme: "dark-plus"
   })
 
   let { data } = $props()
