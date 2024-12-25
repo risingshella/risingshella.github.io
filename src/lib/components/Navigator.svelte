@@ -8,13 +8,13 @@
     { href: "/novels", label: "Novels" }
   ]
   const typeOfCorner = {
-    "/": "",
-    "/about": "little ",
-    "/blogs": "blogs ",
-    "/novels": "novels "
+    "": "",
+    about: "little ",
+    blogs: "blogs ",
+    novels: "novels "
   }
 
-  let pageSubtitle = $derived(typeOfCorner[$page.url.pathname])
+  let pageSubtitle = $derived(typeOfCorner[$page.url.pathname.split("/")[1]])
   let isMenuOpened = $state(false)
 
   $effect(() => {
