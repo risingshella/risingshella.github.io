@@ -11,7 +11,7 @@
   })
 
   let { data } = $props()
-  let value = data["md_test_file"]
+  let value = data.md
 </script>
 
 <div class="my-6 flex justify-around px-4">
