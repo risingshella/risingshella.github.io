@@ -16,14 +16,10 @@
 
   let pageSubtitle = $derived(typeOfCorner[$page.url.pathname.split("/")[1]])
   let isMenuOpened = $state(false)
-
-  $effect(() => {
-    if (isMenuOpened) document.getElementById("menu").focus()
-  })
 </script>
 
 <div class="sticky top-0 z-50">
-  <header class="w-full border-b border-slate-300/10 bg-slate-900/65 backdrop-blur-md sm:bg-transparent">
+  <header class="w-full border-b border-slate-300/10 bg-slate-900/65 backdrop-blur-md">
     <div class="flex items-center py-4 font-sans sm:justify-around">
       <div class="flex items-center px-4 text-slate-100 sm:hidden">
         <button onclick={() => (isMenuOpened = !isMenuOpened)}>
@@ -53,9 +49,7 @@
   {#if isMenuOpened}
     <div
       id="menu"
-      tabindex="-1"
-      class="absolute max-h-fit w-28 rounded-b-md border-x border-slate-300/10 bg-slate-900/65 font-semibold text-slate-100 outline-none backdrop-blur-md"
-      onfocusout={() => (isMenuOpened = false)}
+      class="absolute z-50 max-h-fit w-28 rounded-b-md border-x border-slate-300/10 bg-slate-900/65 font-semibold text-slate-100 outline-none backdrop-blur-md"
     >
       {#each routes as { href, label }}
         <a class="block h-full w-full border-b border-b-slate-500/5 p-3" {href}>{label}</a>
