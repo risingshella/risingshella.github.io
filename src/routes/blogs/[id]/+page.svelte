@@ -21,8 +21,8 @@
     <Giscus
       repo="shellawa/www"
       repoId="MDEwOlJlcG9zaXRvcnkzNzU1NjEwMTg="
-      category="Announcements"
-      categoryId="DIC_kwDOFmKbOs4ClkvT"
+      category="Giscus"
+      categoryId="DIC_kwDOFmKbOs4Clk1Z"
       mapping="pathname"
       strict="0"
       reactionsEnabled="1"
