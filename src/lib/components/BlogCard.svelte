@@ -3,7 +3,7 @@
 </script>
 
 <a href="/blogs/{blog.path}">
-  <div class="h-96 w-72 rounded-md border border-slate-300/10 bg-slate-700/50">
+  <div class="h-96 w-72 rounded-md border border-slate-300/10 bg-slate-700/50 hover:scale-[1.03] hover:bg-slate-700/75 transition-all">
     <img
       class="h-44 w-full rounded-t-md object-cover"
       src="https://raw.githubusercontent.com/shellawa/shellawa.github.io/refs/heads/contents/blogs/covers/{blog.path}.jpg"

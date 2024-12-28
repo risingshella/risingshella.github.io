@@ -17,13 +17,13 @@
   <meta name="description" content="shellawa's about page" />
 </svelte:head>
 
-<div class="relative flex items-center rounded-lg border border-slate-600 p-4 transition-colors hover:bg-slate-800">
+<div class="relative flex items-center rounded-lg border border-slate-600 p-4 transition-all hover:bg-slate-800 hover:scale-[1.03]">
   {#if link.href}
     <a class="absolute left-0 h-full w-full" aria-label="open" href={link.href} target="_blank"></a>
   {/if}
   <img
     class="absolute w-6 invert"
-    src="https://raw.githubusercontent.com/shellawa/shellawa.github.io/refs/heads/dev/contents/static/icons/{link.icon}"
+    src="https://raw.githubusercontent.com/shellawa/shellawa.github.io/refs/heads/contents/general/icons/{link.icon}"
     alt="{link.label} icon"
   />
   <div class="mx-auto">{link.label}</div>

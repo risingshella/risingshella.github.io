@@ -8,7 +8,7 @@
     { href: "/novels", label: "Novels" }
   ]
   const typeOfCorner = {
-    "": "",
+    "": "little ",
     about: "little ",
     blogs: "blogs ",
     novels: "novels "

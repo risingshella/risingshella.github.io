@@ -3,8 +3,8 @@
   let { data } = $props()
 </script>
 
-<div class="mx-auto flex max-w-5xl flex-wrap justify-around">
+<div class="mx-auto flex max-w-5xl px-6 flex-wrap justify-around mt-8">
   {#each data.blogs_map as blog}
-    <div class="mx-1 pb-12"><BlogCard {blog} /></div>
+    <div class="mx-1 pb-10"><BlogCard {blog} /></div>
   {/each}
 </div>
