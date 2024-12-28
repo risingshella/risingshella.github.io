@@ -1,0 +1,38 @@
+[
+  {
+    "label": "awasymmetry@gmail.com",
+    "href": "mailto:awasymmetry@gmail.com",
+    "copy": "awasymmetry@gmail.com",
+    "icon": "mail.svg"
+  },
+  {
+    "label": "awasymmetry",
+    "copy": "awasymmetry",
+    "icon": "discord.svg"
+  },
+  {
+    "label": "shellawa",
+    "href": "https://github.com/shellawa",
+    "icon": "github.svg"
+  },
+  {
+    "label": "/u/allehS",
+    "href": "https://reddit.com/u/allehS/",
+    "icon": "reddit.svg"
+  },
+  {
+    "label": "Shella",
+    "href": "https://facebook.com/shellawawawa/",
+    "icon": "facebook.svg"
+  },
+  {
+    "label": "shellawa",
+    "href": "https://osu.ppy.sh/u/shellawa/",
+    "icon": "osu.svg"
+  },
+  {
+    "label": "/id/allehS",
+    "href": "https://steamcommunity.com/id/allehS/",
+    "icon": "steam.svg"
+  }
+]
