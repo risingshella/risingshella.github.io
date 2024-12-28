@@ -26,6 +26,7 @@
 	},
 	"dependencies": {
 		"@cartamd/plugin-code": "^4.0.6",
+		"@giscus/svelte": "^3.0.0",
 		"carta-md": "^4.6.7",
 		"isomorphic-dompurify": "^2.19.0",
 		"lucide-svelte": "^0.468.0"
