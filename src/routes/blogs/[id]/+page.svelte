@@ -19,7 +19,7 @@
   <div class="markdown min-w-0 max-w-5xl">
     <Markdown {carta} {value} />
     <Giscus
-      repo="shellawa/shellawa.github.io"
+      repo="shellawa/www"
       repoId="MDEwOlJlcG9zaXRvcnkzNzU1NjEwMTg="
       category="Announcements"
       categoryId="DIC_kwDOFmKbOs4ClkvT"

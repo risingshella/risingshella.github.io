@@ -6,7 +6,7 @@
   <div class="h-96 w-72 rounded-md border border-slate-300/10 bg-slate-700/50 hover:scale-[1.03] hover:bg-slate-700/75 transition-all">
     <img
       class="h-44 w-full rounded-t-md object-cover"
-      src="https://raw.githubusercontent.com/shellawa/shellawa.github.io/refs/heads/contents/blogs/covers/{blog.path}.jpg"
+      src="https://raw.githubusercontent.com/shellawa/www/refs/heads/contents/blogs/covers/{blog.path}.jpg"
       alt={blog.title}
     />
     <div class="p-4">
