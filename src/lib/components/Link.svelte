@@ -13,11 +13,6 @@
   console.log(link)
 </script>
 
-<svelte:head>
-  <title>About - shellawa</title>
-  <meta name="description" content="shellawa's about page" />
-</svelte:head>
-
 <div
   class="relative flex items-center rounded-lg border border-slate-600 p-4 transition-all hover:scale-[1.03] hover:bg-slate-800"
 >
