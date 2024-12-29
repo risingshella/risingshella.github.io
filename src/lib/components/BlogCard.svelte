@@ -1,12 +1,15 @@
 <script>
+  import { PUBLIC_CONTENT_ORIGIN } from "$env/static/public"
   let { blog } = $props()
 </script>
 
 <a href="/blogs/{blog.path}">
-  <div class="h-96 w-72 rounded-md border border-slate-300/10 bg-slate-700/50 hover:scale-[1.03] hover:bg-slate-700/75 transition-all">
+  <div
+    class="h-96 w-72 rounded-md border border-slate-300/10 bg-slate-700/50 transition-all hover:scale-[1.03] hover:bg-slate-700/75"
+  >
     <img
       class="h-44 w-full rounded-t-md object-cover"
-      src="https://raw.githubusercontent.com/shellawa/www/refs/heads/contents/blogs/covers/{blog.path}.jpg"
+      src="{PUBLIC_CONTENT_ORIGIN}/blogs/covers/{blog.path}.jpg"
       alt={blog.title}
     />
     <div class="p-4">

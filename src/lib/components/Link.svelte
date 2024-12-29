@@ -1,4 +1,5 @@
 <script>
+  import { PUBLIC_CONTENT_ORIGIN } from "$env/static/public"
   import { Copy, Check } from "lucide-svelte"
   import { copy } from "svelte-copy"
 
@@ -23,11 +24,7 @@
   {#if link.href}
     <a class="absolute left-0 h-full w-full" aria-label="open" href={link.href} target="_blank"></a>
   {/if}
-  <img
-    class="absolute w-6 invert"
-    src="https://raw.githubusercontent.com/shellawa/www/refs/heads/contents/general/icons/{link.icon}"
-    alt="{link.label} icon"
-  />
+  <img class="absolute w-6 invert" src="{PUBLIC_CONTENT_ORIGIN}/general/icons/{link.icon}" alt="{link.label} icon" />
   <div class="mx-auto">{link.label}</div>
   {#if link.copy}
     <button
