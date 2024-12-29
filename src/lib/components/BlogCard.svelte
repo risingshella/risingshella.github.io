@@ -13,11 +13,8 @@
       alt={blog.title}
     />
     <div class="p-4">
-      <h2 class="mb-1 text-xl font-semibold text-slate-50">{blog.title}</h2>
-      <p class="text-justify text-sm text-slate-50/50">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum quam voluptates necessitatibus nobis
-        aliquam asperiores alias dolorum qui et, dolore non commodi iure harum modi temporibus.
-      </p>
+      <h2 class="mb-2 text-xl font-semibold text-slate-50">{blog.title}</h2>
+      <p class="text-justify text-sm text-slate-50/50">{blog.desc}</p>
     </div>
   </div>
 </a>
