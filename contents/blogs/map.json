@@ -1,0 +1,32 @@
+[
+  {
+    "path": "2024-12-29-how-i-made-this-website",
+    "title": "Cách trang này được tạo",
+    "desc": "Bài đăng này chia sẻ những công cụ em đã dùng, quá trình xây dựng cấu trúc và những bước thực hiện xây dựng trang web này từ cấu trúc đó cho đến khi deploy website để người dùng có thể truy cập và tương tác."
+  },
+  {
+    "path": "2024-12-29-hai-duong",
+    "title": "Tỉnh Hải Dương",
+    "desc": "Hải Dương là một tỉnh nằm ở vùng Đồng bằng sông Hồng của Việt Nam. Tỉnh này nổi tiếng với nền nông nghiệp phát triển, đặc biệt là vải thiều Thanh Hà và bánh đậu xanh. Hải Dương cũng có nhiều di tích lịch sử và danh lam thắng cảnh."
+  },
+  {
+    "path": "2024-12-29-ha-noi",
+    "title": "Thủ Đô Hà Nội",
+    "desc": "Hà Nội là thủ đô của Việt Nam và là trung tâm chính trị, văn hóa, và giáo dục của cả nước. Thành phố này nổi bật với những công trình kiến trúc cổ kính, hồ nước thơ mộng và văn hóa ẩm thực phong phú."
+  },
+  {
+    "path": "2024-12-29-tphcm",
+    "title": "TP. Hồ Chí Minh",
+    "desc": "Thành phố Hồ Chí Minh, còn được gọi là Sài Gòn, là trung tâm kinh tế và tài chính lớn nhất Việt Nam. Với sự pha trộn hài hòa giữa nét hiện đại và truyền thống, thành phố này là điểm đến hấp dẫn cho du khách trong và ngoài nước."
+  },
+  {
+    "path": "2024-12-29-da-nang",
+    "title": "Thành Phố Đà Nẵng",
+    "desc": "Đà Nẵng là một thành phố ven biển ở miền Trung Việt Nam, nổi tiếng với bãi biển đẹp, núi non hùng vĩ và nhịp sống hiện đại. Thành phố này là cửa ngõ quan trọng kết nối miền Bắc và miền Nam."
+  },
+  {
+    "path": "2024-12-29-hue",
+    "title": "Thành Phố Huế",
+    "desc": "Huế là một thành phố nổi tiếng với di sản văn hóa phong phú và lịch sử lâu dài, nằm ở miền Trung Việt Nam. Thành phố này từng là kinh đô của Việt Nam dưới triều đại nhà Nguyễn, nơi lưu giữ nhiều di tích lịch sử quan trọng."
+  }
+]

@@ -9,8 +9,6 @@
   $effect(() => {
     if (is_copied) setTimeout(() => (is_copied = false), 2000)
   })
-
-  console.log(link)
 </script>
 
 <div

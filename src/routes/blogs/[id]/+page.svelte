@@ -1,23 +1,13 @@
 <script>
-  import { Carta, Markdown } from "carta-md"
-  import DOMPurify from "isomorphic-dompurify"
   import Giscus from "@giscus/svelte"
-  import { code } from "@cartamd/plugin-code"
   import "$lib/styles/markdown.pcss"
 
-  const carta = new Carta({
-    extensions: [code()],
-    sanitizer: DOMPurify.sanitize,
-    theme: "dark-plus"
-  })
-
   let { data } = $props()
-  let value = data.md
 </script>
 
 <div class="my-6 flex justify-around px-4">
   <div class="markdown min-w-0 max-w-5xl">
-    <Markdown {carta} {value} />
+    {@html data.html}
     <Giscus
       repo="shellawa/www"
       repoId="MDEwOlJlcG9zaXRvcnkzNzU1NjEwMTg="
