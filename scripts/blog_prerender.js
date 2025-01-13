@@ -5,6 +5,8 @@ import remarkRehype from "remark-rehype"
 import { unified } from "unified"
 import fs from "fs"
 
+if (!fs.existsSync("./contents/_dist")) fs.mkdirSync("./contents/_dist")
+
 const blogs = fs.readdirSync("./contents/blogs").filter((x) => x.slice(-3) == ".md")
 for (const blog of blogs) {
   const html = await unified()
