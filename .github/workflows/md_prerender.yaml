@@ -1,6 +1,7 @@
 name: Prerender Markdown to HTML
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "contents/**"
