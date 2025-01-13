@@ -5,9 +5,9 @@ import remarkRehype from "remark-rehype"
 import { unified } from "unified"
 import fs from "fs"
 
-if (!fs.existsSync("./contents/_dist")) fs.mkdirSync("./contents/_dist")
+if (!fs.existsSync("./content/_dist")) fs.mkdirSync("./content/_dist")
 
-const blogs = fs.readdirSync("./contents/blogs").filter((x) => x.slice(-3) == ".md")
+const blogs = fs.readdirSync("./content/blogs").filter((x) => x.slice(-3) == ".md")
 for (const blog of blogs) {
   const html = await unified()
     .use(remarkParse)
@@ -16,7 +16,7 @@ for (const blog of blogs) {
       theme: "dark-plus"
     })
     .use(rehypeStringify)
-    .process(fs.readFileSync(`./contents/blogs/${blog}`))
+    .process(fs.readFileSync(`./content/blogs/${blog}`))
 
-  fs.writeFileSync(`./contents/_dist/${blog.replace(".md", ".html")}`, html.toString())
+  fs.writeFileSync(`./content/_dist/${blog.replace(".md", ".html")}`, html.toString())
 }
