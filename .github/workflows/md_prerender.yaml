@@ -1,0 +1,41 @@
+name: Prerender Markdown to HTML
+
+on:
+  push:
+    paths:
+      - "contents/**"
+
+jobs:
+  prerender:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Prerender Markdown
+        run: npm run prerender
+
+      - name: Install rclone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone
+        run: |
+          echo "[r2]" > ~/.config/rclone/rclone.conf
+          echo "type = s3" >> ~/.config/rclone/rclone.conf
+          echo "provider = Cloudflare" >> ~/.config/rclone/rclone.conf
+          echo "access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}" >> ~/.config/rclone/rclone.conf
+          echo "secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}" >> ~/.config/rclone/rclone.conf
+          echo "endpoint = ${{ secrets.R2_ENDPOINT }}" >> ~/.config/rclone/rclone.conf
+
+      - name: Sync contents to Cloudflare R2
+        run: rclone sync ./contents r2:${{ secrets.R2_BUCKET_NAME }} --progress
