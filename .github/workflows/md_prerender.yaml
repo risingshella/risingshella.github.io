@@ -40,4 +40,4 @@ jobs:
           echo "endpoint = ${{ secrets.R2_ENDPOINT }}" >> ~/.config/rclone/rclone.conf
 
       - name: Sync content to Cloudflare R2
-        run: rclone sync ./content r2:${{ secrets.R2_BUCKET_NAME }} --progress
+        run: rclone sync ./content r2:${{ secrets.R2_BUCKET_NAME }} --progress --exclude-if-present ".no-sync" 
